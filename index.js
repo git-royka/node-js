@@ -19,7 +19,7 @@ else {visits++};
   process.stdout.write = write(process.stdout.write);
   res.writeHead(200,{'Content-Type': 'text/plain; charset=utf-8'});
   fs.writeFileSync('counter.txt', visits);
-  res.end('Сайт посетили '+visits+' пользователя V2.1');
+  res.end('Сайт посетили '+visits+' пользователя V3');
 });
 var port = process.env.PORT || 3434;
 var ip = process.env.IP;
